@@ -1,0 +1,56 @@
+/* Variables */
+:root {
+    --sushi-red: #d90429;
+    --sushi-dark: #1a1a1a;
+}
+
+/* Global Styles */
+body { 
+    background-color: #fcfcfc; 
+    font-family: 'Georgia', serif; 
+}
+
+/* Navbar & Backgrounds */
+.bg-sushi-dark { 
+    background-color: var(--sushi-dark); 
+}
+
+.text-sushi { 
+    color: var(--sushi-red); 
+}
+
+/* Hero Section */
+.hero-img { 
+    height: 70vh; 
+    object-fit: cover; 
+    filter: brightness(0.7); 
+}
+
+/* Menu Cards (Now all identical) */
+.card-hover { 
+    transition: 0.3s; 
+    border: none !important; 
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.card-hover:hover { 
+    transform: translateY(-10px); 
+    box-shadow: 0 1rem 3rem rgba(0,0,0,.175) !important; 
+}
+
+/* Gallery Images */
+.gallery-img { 
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 15px; 
+    transition: 0.3s; 
+}
+
+.gallery-img:hover { 
+    filter: saturate(1.2); 
+}
+
+/* Ensure the Order Now buttons stay aligned regardless of text length */
+.card-body {
+    flex-grow: 1;
+}
